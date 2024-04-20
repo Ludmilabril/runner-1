@@ -2,30 +2,30 @@
 
 public class Controller_Player : MonoBehaviour
 {
-    private Rigidbody rb;
-    public float jumpForce = 10;
-    private float initialSize;
-    private int i = 0;
-    private bool floored;
+    private Rigidbody rb; // Permite utilizar las físicas.
+    public float jumpForce = 10; // La fuerza con la que el Jugador saltará.
+    private float initialSize;  // El tamaño inicial del jugador.
+    private int i = 0; 
+    private bool floored; // Permite identificar si el jugador esta en el piso o no.
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        initialSize = rb.transform.localScale.y;
+        rb = GetComponent<Rigidbody>(); // Accede al componente "Rigidbody" del jugador.
+        initialSize = rb.transform.localScale.y; // Se obtiene el tamaño inicial del jugador.
     }
 
     void Update()
     {
-        GetInput();
+        GetInput(); 
     }
 
-    private void GetInput()
+    private void GetInput() // Funcion que permite al jugador agacharse y saltar.
     {
         Jump();
         Duck();
     }
 
-    private void Jump()
+    private void Jump() // Con la letra "W" el jugador salta.
     {
         if (floored)
         {
@@ -36,7 +36,7 @@ public class Controller_Player : MonoBehaviour
         }
     }
 
-    private void Duck()
+    private void Duck() // Con la letra "S" el jugador, si esta en el piso, reducira su tamaño, si no solo bajara.
     {
         if (floored)
         {
@@ -66,7 +66,7 @@ public class Controller_Player : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision) // Establece las colisiones con los enemigos y si el jugador esta en el piso.
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -80,7 +80,7 @@ public class Controller_Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnCollisionExit(Collision collision) // Revisa si el jugador no esta colisionando con el piso.
     {
         if (collision.gameObject.CompareTag("Floor"))
         {
