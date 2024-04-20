@@ -21,13 +21,13 @@ public class Controller_Hud : MonoBehaviour
         if (gameOver) // La funcion se ejecuta si gameOver es verdadero.
         {
             Time.timeScale = 0; // El tiempo se para.
-            gameOverText.text = "Game Over \n Total Distance: " + distance.ToString(); // Se muestra el texto de gameOver y la distancia total recorrida.
+            gameOverText.text = "Game Over \n Total Distance: " + distance.ToString("f0"); // Se muestra el texto de gameOver y la distancia total recorrida.
             gameOverText.gameObject.SetActive(true); // Se activa el texto de gameOver.
         }
         else // si gameOver es falso la distancia sigue incrementandose.
         {
             distance += Time.deltaTime;
-            distanceText.text = distance.ToString();
+            distanceText.text = distance.ToString("f0"); // Con el "f0" la distancia no tendrá decimales.
         }
     }
 }
