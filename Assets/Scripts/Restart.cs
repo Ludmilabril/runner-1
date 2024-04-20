@@ -8,7 +8,7 @@ public class Restart : MonoBehaviour
         GetInput();
     }
 
-    private void GetInput()
+    private void GetInput() // Con la tecla "R" el juego se resetea.
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
