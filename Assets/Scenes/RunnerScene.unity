@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 1
+  parallaxEffect: 2
   GameOver: 0
 --- !u!1 &279884276
 GameObject:
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 0.09
+  parallaxEffect: 1
   GameOver: 0
 --- !u!1 &432534838
 GameObject:
@@ -397,7 +397,6 @@ MonoBehaviour:
   - {fileID: 4641428172921375839, guid: ad4857fb319b5014696c8c201b507222, type: 3}
   - {fileID: 4362255490418720725, guid: 10839c286a1f27947bc1fa05aee0bfdb, type: 3}
   - {fileID: 9145002132079440597, guid: 0e6260b13f6e84c47b94dd28da588bcd, type: 3}
-  - {fileID: 3413277343943048629, guid: 1d3e4454922aca449abc8f74d293781f, type: 3}
   instantiatePos: {fileID: 432534838}
   respawningTimer: 0
 --- !u!4 &432534840
@@ -581,7 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 0.08
+  parallaxEffect: 0.8
   GameOver: 0
 --- !u!1 &622753980
 GameObject:
@@ -760,7 +759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 0.09
+  parallaxEffect: 1
   GameOver: 0
 --- !u!1 &648518005
 GameObject:
@@ -1126,7 +1125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 0.09
+  parallaxEffect: 1
   GameOver: 0
 --- !u!1 &1018040023
 GameObject:
@@ -1269,7 +1268,7 @@ Transform:
   m_GameObject: {fileID: 1018040023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 0.09, z: 0}
+  m_LocalPosition: {x: -4, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1373,7 +1372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 5
+  parallaxEffect: 1.5
   GameOver: 0
 --- !u!1 &1389677574
 GameObject:
@@ -1473,7 +1472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 0.08
+  parallaxEffect: 0.8
   GameOver: 0
 --- !u!1 &1488560109
 GameObject:
@@ -1573,7 +1572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 0.5
+  parallaxEffect: 1.5
   GameOver: 0
 --- !u!1 &1568783176
 GameObject:
@@ -1970,7 +1969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 1
+  parallaxEffect: 2
   GameOver: 0
 --- !u!1 &1800094078
 GameObject:
@@ -2070,7 +2069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
-  parallaxEffect: 0.09
+  parallaxEffect: 1
   GameOver: 0
 --- !u!1 &2047786962
 GameObject:
