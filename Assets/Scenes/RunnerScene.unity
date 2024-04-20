@@ -263,6 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 2
+  GameOver: 0
 --- !u!1 &279884276
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 1
+  GameOver: 0
 --- !u!1 &432534838
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 0.8
+  GameOver: 0
 --- !u!1 &622753980
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 1
+  GameOver: 0
 --- !u!1 &648518005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,6 +1126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 1
+  GameOver: 0
 --- !u!1 &1018040023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,6 +1373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 1.5
+  GameOver: 0
 --- !u!1 &1389677574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 0.8
+  GameOver: 0
 --- !u!1 &1488560109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,6 +1573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 1.5
+  GameOver: 0
 --- !u!1 &1568783176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,6 +1608,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceText: {fileID: 622753981}
   gameOverText: {fileID: 648518006}
+  parallax00: {fileID: 1727226808}
+  parallax01: {fileID: 1488560112}
+  parallax02: {fileID: 988344203}
+  parallax03: {fileID: 1389677577}
+  parallax04: {fileID: 1800094081}
+  parallax05: {fileID: 95186848}
+  parallax06: {fileID: 1105942189}
+  parallax07: {fileID: 627982345}
+  parallax08: {fileID: 607197980}
+  parallax09: {fileID: 279884279}
 --- !u!114 &1568783178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1952,6 +1970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 2
+  GameOver: 0
 --- !u!1 &1800094078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,6 +2070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
   parallaxEffect: 1
+  GameOver: 0
 --- !u!1 &2047786962
 GameObject:
   m_ObjectHideFlags: 0
