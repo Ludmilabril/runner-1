@@ -14,6 +14,7 @@ public class Controller_PowerUp : MonoBehaviour
             if (playerController != null)
             {
                 playerController.Immunity(powerUpDuration); // Inicia el PowerUp de invulnerabilidad en el jugador.
+               
             }
             Destroy(gameObject);
         }
