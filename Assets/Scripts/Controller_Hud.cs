@@ -7,7 +7,7 @@ public class Controller_Hud : MonoBehaviour
     public static bool gameOver = false; // Variable booleana para determinar si el jugador pierde o no.
     public Text distanceText; // Variable del tipo Text para representar la distancia del jugador.
     public Text gameOverText; // Variable del tipo Text que se mostara cuando el jugador pierde.
-    private float distance = 0; // Variable que representa la distancia del jugador.
+    public float distance = 0; // Variable que representa la distancia del jugador.
     public Parallax parallax00, parallax01;
     public Parallax parallax02, parallax03;
     public Parallax parallax04, parallax05;

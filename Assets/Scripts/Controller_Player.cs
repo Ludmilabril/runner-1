@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Device;
 
 public class Controller_Player : MonoBehaviour
 {
@@ -7,18 +8,60 @@ public class Controller_Player : MonoBehaviour
     private float initialSize;  // El tamaño inicial del jugador.
     private int i = 0; 
     private bool floored; // Permite identificar si el jugador esta en el piso o no.
+    private bool immune = false; // 
+    private float immuneDuration; // 
+    private float PowerUpTimer; // Temporizador para el efecto del PowerUp.
+    private Collider playerCollider;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>(); // Accede al componente "Rigidbody" del jugador.
         initialSize = rb.transform.localScale.y; // Se obtiene el tamaño inicial del jugador.
+        playerCollider = GetComponent<Collider>();
     }
 
     void Update()
     {
+        if (immune)
+        {
+            PowerUpTimer -= Time.deltaTime;
+            if (PowerUpTimer <= 0)
+            {
+                EndPowerUp();
+            }
+        }
         GetInput(); 
     }
-
+    public void EndPowerUp()
+    {
+        immune = false;
+        CollisionsOff(false);
+        GetComponent<Controller_ColorPowerUp>().BackToNormal();
+    }
+   
+    private void CollisionsOff(bool ignore)
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            Collider enemyCollider = enemy.GetComponent<Collider>();
+            if (enemyCollider != null)
+            {
+                Physics.IgnoreCollision(playerCollider, enemyCollider, ignore);
+            }
+        }
+    }
+    public void Immunity(float duration)
+    {
+        if (!immune)
+        {
+            immune = true;
+            immuneDuration = duration;
+            PowerUpTimer = duration;
+            CollisionsOff(true); // Ignorar colisiones con enemigos mientras el PowerUp está activo.
+            GetComponent<Controller_ColorPowerUp>().ChangeColor();
+        }
+    }
     private void GetInput() // Funcion que permite al jugador agacharse y saltar.
     {
         Jump();
