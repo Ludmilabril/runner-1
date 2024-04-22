@@ -18,7 +18,7 @@ public class Controller_Enemy5 : MonoBehaviour
 
     }
 
-    void Update()
+    void Update() // si el personaje esta dentro del rango del enemigo, comienza a disparar.
     {
         alerta = Physics.CheckSphere(transform.position, Rango, CapaJugador);
         if (alerta == true)
@@ -29,7 +29,7 @@ public class Controller_Enemy5 : MonoBehaviour
     }
 
 
-    void Disparo()
+    void Disparo() 
     {
         Vector3 direccion_jugador = (Player.position - transform.position).normalized;
 

@@ -10,13 +10,13 @@ public class Controller_SpawnEnemy : MonoBehaviour
     private Vector3 spawnPosition;
     private bool EnemySpawned;
 
-    void Start()
+    void Start() //Instanciar donde se mostrará el power up en el juego.
     {
         spawnPosition = new Vector3(4.49f, 3.37f, -10.16f);
         EnemySpawned = false;
     }
 
-    void Update()
+    void Update() //Identificar si se cumple con lo requerido para spawnear al enemigo.
     {
 
         if (!EnemySpawned && hudController.distance >= 13f)

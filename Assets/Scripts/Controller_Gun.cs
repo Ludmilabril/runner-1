@@ -12,7 +12,7 @@ public class Controller_Gun : MonoBehaviour
 
     void Update()
     {
-        // Disparar cuando se presiona el botón izquierdo del mouse
+        // Disparar cuando se presiona el botón izquierdo del mouse.
         if (Input.GetMouseButtonDown(0))
         {
             FireBullet();
@@ -22,14 +22,14 @@ public class Controller_Gun : MonoBehaviour
 
     void FireBullet()
     {
-        // Instanciar la bala en el gameObject del arma
+        // Instanciar la bala en el gameObject del arma.
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.transform.position, bulletSpawnPoint.transform.rotation);
 
-        // Obtener el rigidbody de la bala y aplicarle fuerza en la dirección hacia adelante
+        // Obtener el rigidbody de la bala y aplicarle fuerza en la dirección hacia adelante.
         Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
         bulletRigidbody.velocity = bulletSpawnPoint.transform.forward * bulletSpeed;
 
-        // Destruir la bala 
+        // Destruir la bala. 
         Destroy(bullet, 1f);
     }
 
