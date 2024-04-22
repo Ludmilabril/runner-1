@@ -12,19 +12,20 @@ public class Controller_SpawnEnemy : MonoBehaviour
 
     void Start()
     {
-        spawnPosition = new Vector3(5.449153f, 3.710996f, -9.673029f);
+        spawnPosition = new Vector3(4.49f, 3.37f, -10.16f);
         EnemySpawned = false;
     }
 
     void Update()
     {
 
-        if (!EnemySpawned && hudController.distance >= 10f)
+        if (!EnemySpawned && hudController.distance >= 13f)
         {
             SpawnEnemy();
             EnemySpawned = true;
            
         }
+        
     }
 
 

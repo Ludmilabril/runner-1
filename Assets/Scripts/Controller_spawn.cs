@@ -19,11 +19,12 @@ public class Controller_spawn : MonoBehaviour
     void Update()
     {
         
-        if (!powerUpSpawned && hudController.distance >= 5f)
+        if (!powerUpSpawned && hudController.distance >= 5f )
         {
             SpawnPowerUP();
             powerUpSpawned = true; 
         }
+       
     }
     
    
